@@ -17,7 +17,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class BoardMapper {
-
+ 
     private SqlSession sqlSession;
     
     public List<BoardVo> boardList(){

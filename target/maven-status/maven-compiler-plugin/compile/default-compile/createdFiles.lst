@@ -1,0 +1,12 @@
+com\genians\jsf\demo\controller\BoardController.class
+com\genians\jsf\demo\config\SqlSessionFactoryProvider.class
+com\genians\jsf\demo\controller\UserController.class
+com\genians\jsf\demo\DemoApplication.class
+com\genians\jsf\demo\repository\DemoMapper.class
+com\genians\jsf\demo\service\UserService.class
+com\genians\jsf\demo\vo\BoardVo.class
+com\genians\jsf\demo\vo\UserVo.class
+com\genians\jsf\demo\repository\BoardMapper.class
+com\genians\jsf\demo\repository\UserMapper.class
+com\genians\jsf\demo\service\BoardService.class
+com\genians\jsf\demo\config\TomcatServletContextListener.class

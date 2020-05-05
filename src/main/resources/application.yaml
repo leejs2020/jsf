@@ -12,17 +12,14 @@ spring:
 #      minimum-idle: 2
 #      connection-test-query: SELECT 1
 #      
----
 
 logging:
   level:
     jdbc.sqlonly: DEBUG 
     org.springframework.web: DEBUG
     com.zaxxer.hikari.HikariDataSource: ERROR
-    
----
 
 mybatis: 
-    type-aliases-package: com.genians.jsf.demo
-    mapper-locations: /mapper/**/*.xml
+    type-aliases-package: com.genians.jsf.demo.repository
+    mapper-locations: classpath:mapper/*.xml
     

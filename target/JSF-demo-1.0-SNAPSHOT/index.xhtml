@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:h="http://xmlns.jcp.org/jsf/html"
+   xmlns:f="http://xmlns.jcp.org/jsf/core"
+   xmlns:jsf="http://xmlns.jcp.org/jsf"
+   xmlns:p="http://primefaces.org/ui">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <h:head>
         <title>Facelet Title</title>
@@ -11,9 +13,7 @@
     <h:body>
         Hello from Facelets 
         <p>Mybatis TEST</p>
-        <h:outputText value="#{board.foo}"></h:outputText>
         <br></br>
-        <h:outputText value="#{board.bar}"></h:outputText>
         <br></br>
         <p>JSON 형식</p>
         <h:outputText value="#{user.userListToJson}"></h:outputText>

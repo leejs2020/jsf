@@ -8,22 +8,20 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
-/**
- *
- * @author leejs2020
- */
+
 @SpringBootApplication
-@MapperScan(basePackages = "com.genians.jsf.demo")
+//@MapperScan(basePackages = "com.genians.jsf.demo.repository")
 public class DemoApplication {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(DemoApplication.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(DemoApplication.class);
 
-    public static void main(String[] args) {
-        try {
-            SpringApplication springApplication = new SpringApplicationBuilder().sources(DemoApplication.class).web(WebApplicationType.NONE).build();
-            springApplication.run(args);
-        } catch (Exception exception) {
-            LOGGER.error("[App] could not launch app.", exception);
-        }
-    }
+	public static void main(String[] args) {
+		try {
+//            SpringApplication springApplication = new SpringApplicationBuilder().sources(DemoApplication.class).web(WebApplicationType.NONE).build();
+//            springApplication.run(args);
+			SpringApplication.run(DemoApplication.class, args);
+		} catch (Exception exception) {
+			LOGGER.error("[App] could not launch app.", exception);
+		}
+	}
 }
