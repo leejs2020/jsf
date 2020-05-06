@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.genians.jsf.demo.repository.UserMapper">
+    <select id="selectListUserId" resultType="userVo">
+        SELECT 
+            user_id
+            , user_name
+            , join_date
+            , regist_yn
+            , out_date 
+        FROM 
+            User
+    </select>
+    
+    <select id="chkUserId" resultType="int">
+        SELECT
+            COUNT(user_id)
+        FROM
+            User
+        WHERE
+            user_id = #{user_id}
+    </select>
+    
+    <insert id="insertUserInfo">
+         INSERT INTO User (user_id, user_name) VALUES (#{userId}, #{userName})
+    </insert>
+    
+    <update id="updateUserInfo">
+        UPDATE User set user_name = #{userName} where userId = #{userId}
+    </update>
+    
+    <delete id="deleteUserInfo">
+        Update User set regist_yn = "N" where userId = #{userId}
+    </delete>
+</mapper>

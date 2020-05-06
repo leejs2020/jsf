@@ -5,8 +5,9 @@
  */
 package com.genians.jsf.demo.service;
 
-import com.genians.jsf.demo.repository.BoardMapper;
+import com.genians.jsf.demo.mapper.BoardMapper;
 import com.genians.jsf.demo.vo.BoardVo;
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

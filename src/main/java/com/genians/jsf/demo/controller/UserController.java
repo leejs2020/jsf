@@ -5,7 +5,6 @@ import com.genians.jsf.demo.vo.UserVo;
 import com.google.gson.Gson;
 import java.util.List;
 import javax.enterprise.context.RequestScoped;
-import javax.inject.Inject;
 import javax.inject.Named;
 import org.springframework.beans.factory.annotation.Autowired;
 

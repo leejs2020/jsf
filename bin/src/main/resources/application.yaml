@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    hikari: 
+      jdbc-url: jdbc:log4jdbc:mysql://172.29.73.50:3306/OJT
+      username: root
+      password: Genian123!
+    #driver-class-name: com.mysql.jdbc.Driver ## 2. 기존 사용하던 com.mysql.jdbc.Driver를 net.sf.log4jdbc.sql.jdbcapi.DriverSpy 로 변경.
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      connection-timeout: 5000
+      validation-timeout: 1000
+      maximum-pool-size: 30
+      minimum-idle: 2
+      connection-test-query: SELECT 1
+      
+
+logging:
+  level:
+    jdbc.sqlonly: DEBUG 
+    org.springframework.web: DEBUG
+    com.zaxxer.hikari.HikariDataSource: ERROR
+
+mybatis: 
+    type-aliases-package: com.genians.jsf.demo.mapper
+    mapper-locations: classpath:mapper/*.xml

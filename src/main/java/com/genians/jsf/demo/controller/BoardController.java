@@ -1,14 +1,15 @@
 package com.genians.jsf.demo.controller;
 
-import com.genians.jsf.demo.service.BoardService;
-import com.genians.jsf.demo.vo.BoardVo;
 import java.util.List;
 import java.util.logging.Logger;
-import javax.enterprise.context.RequestScoped;
 
-import javax.inject.Inject;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
+
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.genians.jsf.demo.service.BoardService;
+import com.genians.jsf.demo.vo.BoardVo;
 
 /**
  *
